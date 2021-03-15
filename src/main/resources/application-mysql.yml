@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: org.mariadb.jdbc.Driver
+      jdbc-url: jdbc:mariadb://mariadb.cchnuymxmmul.ap-northeast-2.rds.amazonaws.com/spring_batch
+      username: root
+      password: jongun311!
+  batch:
+    initialize-schema: never #메타 테이블을 자동으로 생성하지 않도록 한다.(자동생성 : ALWAYS // 초기에 한 번만 실행한다.)
